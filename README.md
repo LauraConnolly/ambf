@@ -230,12 +230,14 @@ To run on windows:
 1. Clone the repo 
 2. Open a terminal and navigate to the repo folder (the folder with Dockerfile in it)
 3. Enter the following in the terminal (you select 'name' and 'image name'): 
-``` docker build -t 'name'
-	docker run -'name' 'image_name' -p 6080:80 -p 5900:5900 -v /dev/shm:/dev/shm 'image_name'
+``` 
+docker build -t 'name'
+docker run -'name' 'image_name' -p 6080:80 -p 5900:5900 -v /dev/shm:/dev/shm 'image_name'
 ```
 4. Open chrome to this: http://127.0.0.1:6080/
 5. To stop the container when you're finished, open another terminal and type: 
-``` docker stop 'name'
+``` 
+docker stop 'name'
 ```
 Note: you can also make your own private docker repo to save local changes to this container: https://docs.docker.com/docker-hub/
 
