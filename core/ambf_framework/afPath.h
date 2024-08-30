@@ -81,9 +81,9 @@ public:
         return m_path.is_absolute();
     }
 
-    bool is_complete(){
-        return m_path.is_complete();
-    }
+    // bool is_complete(){
+    //     return m_path.is_complete();
+    // }
 
     // If this path is relative, it will be appended to the provided parent path
     bool resolvePath(const afPath& a_parentPath){
